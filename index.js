@@ -130,7 +130,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
         .setThumbnail('https://cdn.discordapp.com/attachments/982331559371767808/1421107201967394956/a_dd9d42133d1a2cb475480650d577f2fa-25ED8.gif?ex=68d7d4b7&is=68d68337&hm=1d4a36a79cd1f9b80fa6a0786a6ade5fbbc0d5118ed4eb8d791a280f0a617bb3&') 
         .setFooter({ 
           text: '🔥 Active Developer Bot For Pepper Dev | Made with ❤️ by Pepper Salt',
-          iconURL: 'https://cdn.discordapp.com/attachments/1332936607267033138/1400353273906593844/image_8.png' 
+          iconURL: 'https://cdn.discordapp.com/attachments/982331559371767808/1421107203087273984/pinterest_673991900458503179.gif?ex=68d7d4b8&is=68d68338&hm=a8ce392f0805c6717f4a1126bf05018670875f22d6f26a832b3f3ae36b74dca4&' 
         })
         .setTimestamp()
         .setImage('https://cdn.discordapp.com/attachments/1395245783808348331/1400351640028053556/20250731_102557.png');
