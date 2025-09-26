@@ -12,7 +12,7 @@ const client = new Client({
 const commands = [
   new SlashCommandBuilder()
     .setName('active-dev-badge')
-    .setDescription('Start your 24hr Active Developer Badge timer!'),
+    .setDescription('Start your 24hr Active role play timer!'),
 ].map(command => command.toJSON());
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
@@ -30,10 +30,10 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
       console.log(`Logged in as ${client.user.tag}`);
       
       // Set bot's status
-      client.user.setActivity('chill with manish', { type: 3 }); // Type 3 is "Watching"
+      client.user.setActivity('chill with pepper', { type: 3 }); // Type 3 is "Watching"
       
       // Set bot's about me with watermark
-      const watermark = "Made with ❤️ by Manish | Active Developer Badge Bot | Get your badge in 24 hours!";
+      const watermark = "Made with ❤️ by Pepper Salt | A active role play bot uwu!";
       
       // Function to ensure watermark stays
       const ensureWatermark = async () => {
@@ -101,9 +101,9 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
             name: '📋 Instructions', 
             value: `
             • Wait for the full 24 hours to pass
-            • Click the "Claim Badge" button below
+            • Click the "Citizen Ship" button below
             • Complete the verification process
-            • Enjoy your new badge! 🎉
+            • Enjoy your new roleplay! 🎉
             `, 
             inline: false 
           },
@@ -111,15 +111,15 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
             name: '⚡ Quick Links', 
             value: `
             🔗 [Developer Portal](https://discord.com/developers/applications)
-            📚 [Our website](https://roxy-selfbot.vercel.app/)
-            💡 [Support Server](https://discord.gg/hZf4j8GzzK)
+            📚 [Our website](in construction)
+            💡 [Support Server](under maintanance)
             `, 
             inline: true 
           },
           { 
-            name: '🎯 Badge Benefits', 
+            name: '🎯 Rp Benefits', 
             value: `
-            ✨ Exclusive profile badge
+            ✨ Exclusive game play
             🎖️ Community status
             🚀 flex maybe
             `, 
@@ -129,7 +129,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
         .setColor('#00D4AA')
         .setThumbnail('https://cdn.discordapp.com/attachments/1395245783808348331/1400354191624372375/0d02b202baf618dc122475bf70350fd9.png') 
         .setFooter({ 
-          text: '🔥 Active Developer Badge bot | Made with ❤️ by Manish',
+          text: '🔥 Active Developer Bot For Pepper Dev | Made with ❤️ by Pepper Salt',
           iconURL: 'https://cdn.discordapp.com/attachments/1332936607267033138/1400353273906593844/image_8.png' 
         })
         .setTimestamp()
@@ -137,7 +137,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
 
       const row = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel('🏆 Claim Your Badge')
+          .setLabel('🏆 Claim Your rewards')
           .setStyle(ButtonStyle.Link)
           .setURL('https://discord.com/developers/active-developer')
       );
